@@ -50,18 +50,7 @@
           <button class="tui-login-button tui-button-ripple" :disabled="isLoggingIn" @click="handleLogin">
             <span class="button">{{ !isLoggingIn ? t('Log In') : t('Logging In')}}</span>
           </button>
-          <div class="tui-login-switch">
-            <p v-if="loginType === LoginType.MobilePhone">
-              <span class="tui-login-trial-description">
-                {{ t('Trial description') }}
-              </span>
-              <span class="tui-login-trial-link">
-                <a :underline="false" target="_blank" href="https://cloud.tencent.com/document/product/647/17021">{{ t('Mobile App and Web Site') }}</a>
-              </span>
-            </p>
-            <span class="tui-login-trial-switch" v-if="loginType === LoginType.UserSig" @click="toggleLoginMode">&gt;&gt;&gt;&nbsp;{{ t('Enter trial') }}</span>
-            <span class="tui-login-trial-switch" v-if="loginType === LoginType.MobilePhone" @click="toggleLoginMode">&lt;&lt;&lt;&nbsp;{{ t('Exit trial') }}</span>
-          </div>
+          <div class="tui-login-switch"></div>
         </div>
       </div>
     </div>
