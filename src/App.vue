@@ -4,7 +4,6 @@
 
 <script setup lang="ts">
 import { useAppRequestQuit } from './TUILiveKit/hooks/useAppRequestQuit';
-
 useAppRequestQuit();
 </script>
 
